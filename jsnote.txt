@@ -1,0 +1,64 @@
+function calc(n1,n2){
+    return n1+n2;
+}
+
+function calc(n1,n2){
+    return n1*n2;
+}
+
+function add(n1,n2){
+    return n1+n2;
+}
+function multi(n1,n2){
+    return n1*n2;
+}
+function calc(n1,n2,operator){
+    return operator(n1,n2);
+}
+calc(5,6,multi);
+
+/////
+var bellBoy1={
+    name:"uttam",
+    age:24,
+    experience:3,
+    languages:["hindi","english"]
+}
+bellBoy1.name; 
+
+//// constructer function (start with uppercase)
+function BellBoy(name,age,experience,language) {
+    this.name=name;
+    this.age=age;
+    this.experience=experience;
+    this.language=language;
+} 
+
+//
+var bellBoy1=new BellBoy("uttam",24,3,["hindi","english"]);
+bellBoy1.name;
+bellBoy1.language[0];
+
+// new keyword is use to store values in Ram dynamicly in heap.
+// var stores in stack.
+
+var bellBoy1={
+    name:"uttam",
+    age:24,
+    experience:3,
+    languages:["hindi","english"],
+    todo:function () {
+        alert("Task to do");
+    }
+
+function Emp(name,age,experience,language) {
+    this.name=name;
+    this.age=age;
+    this.experience=experience;
+    this.language=language;
+    this.todo=function(){
+        alert("Task to do");
+    }
+}
+emp1.todo();
+
